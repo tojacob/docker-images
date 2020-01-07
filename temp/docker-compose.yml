@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  node-dev:
+    container_name: node-dev-service
+    # image: "tojacob/node-dev:1.0.0"
+    image: "ubuntu:19.10"
+    volumes:
+      - ./:/app
+    ports:
+      - "4200:4200"
+    command: sh
